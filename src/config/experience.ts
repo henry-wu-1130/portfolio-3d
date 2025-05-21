@@ -1,4 +1,6 @@
-export const experiences = [
+import type { Experiences } from '../types/experience';
+
+export const experiences: Experiences = [
   {
     key: 'chasing',
     company: {
