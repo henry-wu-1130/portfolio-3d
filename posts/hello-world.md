@@ -1,7 +1,7 @@
 ---
-title: "Hello World"
-date: "2025-06-24"
-description: "第一篇部落格文章，展示 markdown 與程式碼高亮"
+title: 'Hello World'
+date: '2025-06-24'
+description: '第一篇部落格文章，展示 markdown 與程式碼高亮'
 ---
 
 # Hello World
@@ -14,4 +14,4 @@ function hello() {
 }
 ```
 
-支援粗體、*斜體*、[連結](https://nextjs.org)。
+支援粗體、_斜體_、[連結](https://nextjs.org)。

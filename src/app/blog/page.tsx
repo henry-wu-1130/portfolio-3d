@@ -22,14 +22,20 @@ function getPosts(): PostMeta[] {
       title: data.title || slug,
       date: data.date || '',
       description: data.description || '',
+      draft: data.draft === true,
     };
-  }).sort((a, b) => b.date.localeCompare(a.date));
+  })
+  .filter(post => !post.draft)
+  .sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export default function BlogPage() {
   const posts = getPosts();
   return (
     <main className="max-w-2xl mx-auto py-10 px-4">
+      <div className="mb-6">
+        <Link href="/" className="text-blue-600 hover:underline">← 回到首頁 / Back to Home</Link>
+      </div>
       <h1 className="text-3xl font-bold mb-8">Blog</h1>
       <ul className="space-y-8">
         {posts.map(post => (

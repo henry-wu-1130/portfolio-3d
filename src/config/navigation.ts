@@ -19,4 +19,9 @@ export const navigationItems = [
     href: '/#contact',
     translationKey: 'nav.contact',
   },
+  {
+    key: 'blog',
+    href: '/blog',
+    translationKey: 'nav.blog',
+  },
 ] as const;
