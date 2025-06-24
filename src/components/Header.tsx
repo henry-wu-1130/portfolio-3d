@@ -36,16 +36,24 @@ export default function Header() {
   );
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-black/50 backdrop-blur-sm">
+    <header className="fixed w-full top-0 z-50 bg-neutral-900/70 backdrop-blur-lg shadow-lg border-b border-white/10">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-2xl font-extrabold tracking-tight text-white drop-shadow-md">
             Henry Wu
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {renderNavItems()}
+            {navigationItems.map(({ key, href, translationKey }) => (
+              <Link
+                key={key}
+                href={href}
+                className="font-semibold text-white hover:text-blue-400 px-2 py-1 rounded transition-colors"
+              >
+                {t(translationKey)}
+              </Link>
+            ))}
             {renderLanguageToggle()}
           </div>
 

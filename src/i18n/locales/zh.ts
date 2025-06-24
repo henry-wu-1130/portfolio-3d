@@ -1,6 +1,7 @@
 export default {
   nav: {
     blog: "部落格",
+
     about: '關於',
     experience: '經歷',
     projects: '專案',

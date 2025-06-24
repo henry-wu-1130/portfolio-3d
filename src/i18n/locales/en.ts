@@ -1,6 +1,7 @@
 export default {
   nav: {
     blog: "Blog",
+
     about: 'About',
     experience: 'Experience',
     projects: 'Projects',
