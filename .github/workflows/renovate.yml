@@ -18,3 +18,4 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           LOG_LEVEL: 'debug'
+        run: npx renovate --autodiscover
