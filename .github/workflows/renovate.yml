@@ -2,7 +2,7 @@ name: Renovate
 
 on:
   push:
-    branches: [main, dev, test]
+    branches: [test]
   schedule:
     # 每 15 分鐘執行一次
     - cron: '*/15 * * * *'
