@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "repositories": [
+    "henry-wu-1130/portfolio-3d"
+  ]
+}
