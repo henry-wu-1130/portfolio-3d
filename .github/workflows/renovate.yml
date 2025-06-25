@@ -21,4 +21,3 @@ jobs:
           configurationFile: .github/renovate.json
         env:
           LOG_LEVEL: 'debug'
-          RENOVATE_AUTODISCOVER: 'true'
