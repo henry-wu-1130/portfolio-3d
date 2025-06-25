@@ -18,5 +18,7 @@ jobs:
           token: ${{ secrets.RENOVATE_TOKEN }}
       - name: Run Renovate
         run: npx renovate --autodiscover
+        with:
+          token: ${{ secrets.RENOVATE_TOKEN }}
         env:
           LOG_LEVEL: 'debug'
